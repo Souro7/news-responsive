@@ -128,3 +128,7 @@ tr:nth-child(odd) {
   .loc-weather{
       margin-top: 0%;
   }
+  .weather-week div img{
+      height: 100px;
+      width: 100px;
+  }
