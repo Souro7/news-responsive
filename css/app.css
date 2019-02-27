@@ -98,3 +98,33 @@ tr td{
 tr:nth-child(odd) {
     background-color: #e0ebeb;
   }
+
+  /*weather widget*/
+ .weather{
+     font-family: Verdana, sans-serif;
+ }
+  .current-weather{
+      display: flex;
+  }
+  #cur-img{
+      flex: 1;
+  }
+  #cur-weather{
+      flex: 6;
+      font-size: -webkit-xxx-large;
+  }
+
+  .weather-week{
+      display: flex;
+      text-align: center;
+  }
+  .weather-week div{
+      flex: 1;
+  }
+  .location{
+    font-size: xx-large;
+    margin-bottom: 0%;
+  }
+  .loc-weather{
+      margin-top: 0%;
+  }
