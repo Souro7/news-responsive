@@ -78,3 +78,23 @@
     flex: 1;
     font-size: large;
 }
+
+/*scoreboard stylling*/
+.scoreboard table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+tr th{
+    background-color: #669999;
+    color: #fff;
+    padding: 20px;
+}
+tr td{
+    padding: 20px;
+}
+tr:nth-child(odd) {
+    background-color: #e0ebeb;
+  }
