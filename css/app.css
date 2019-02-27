@@ -27,7 +27,7 @@
 }
 
 .heading {
-    flex: 5;
+    flex: 10;
 }
 
 .three-icon{
@@ -61,7 +61,7 @@
     display: block;
 }
 .main-image img{
-    /*height: 50vh;*/
+    height: 100%;
     width: 100%;
 }
 .headline{
@@ -207,4 +207,29 @@ tr:nth-child(odd) {
   }
   .rss{
     flex: 2;
+  }
+
+  /*for switching in case of tablet view*/
+  
+ 
+  @media (min-width: 500px) and (max-width: 800px){
+    .switch-container{
+        display: flex;
+        flex-wrap: wrap;
+        }
+    .jumbotron{
+        order: 1;
+        width: 50%;
+    }
+    .weather{order: 2; width: 50%;}
+    .top-news{order: 3; width: 100%;}
+    .scoreboard{order: 4; width: 100%;}
+    .weather-week{
+        flex-wrap: wrap;
+    }
+  }
+  @media(min-width: 800px){
+      .page-header p{
+          font-size: 30px;
+      }
   }
