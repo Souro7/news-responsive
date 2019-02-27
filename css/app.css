@@ -5,7 +5,15 @@
 /*header styling*/
 .page-header p {
     font-family: sans-serif;
-    font-size: 35px;
+    font-size: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.headline p{
+    font-size: 30px;
+}
+.headline h1{
+    font-size: 40px;
 }
 
 .page-header div {
@@ -65,14 +73,14 @@
     width: 100%;
     /*padding-left: 10px;*/
     color: white;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 /*top news section styling*/
 .top-news > div{
     box-shadow: 0px 2px #e6e6e6;
     padding: 20px 0px 20px 0px;
-    font-size: x-small;
+    font-size: 12px;
     font-family: sans-serif;
     color: #666;
 }
@@ -94,6 +102,7 @@
     text-align: center;
     border-collapse: collapse;
     font-family: sans-serif;
+    font-size: 30px;
 }
 
 tr th{
@@ -129,6 +138,7 @@ tr:nth-child(odd) {
   }
   .weather-week div{
       flex: 1;
+      font-size: 30px;
   }
   .location{
     font-size: xx-large;
@@ -141,25 +151,37 @@ tr:nth-child(odd) {
       height: 100px;
       width: 100px;
   }
+  .current-weather div img{
+    height: 200px;
+    width: 200px;
+  }
 
   /*latest news section*/
   .latest{
       display: flex;
       margin-top: 20px;
+      box-shadow: 0px 2px #e6e6e6;
+  }
+  .latest div{
+    font-size: 35px;
   }
   .latest-news > div{
-    box-shadow: 0px 2px #e6e6e6;
+    /*box-shadow: 0px 2px #e6e6e6;*/
     padding: 10px;
-    font-size: small;
+    font-size: 12px;
     font-family: sans-serif;
     color: #666;
+    margin-top: 10px;
   }
   .image{
-    min-height: 100px;
+    min-height: 200px;
   }
   .image img{
-      height: 100px;
+      height: 200px;
       float: left;
+  }
+  #last-news{
+    box-shadow: 0px 2px #e6e6e6;
   }
   
   /*footer section*/
@@ -168,10 +190,13 @@ tr:nth-child(odd) {
       display: flex;
       margin-top: 20px;
       padding: 20px 0px 20px 40px;
-      font-size: medium;
+      font-size: 20px;
       font-family: Verdana, sans-serif;
-      box-shadow: 2px 0px 10px 0px #666;
+      box-shadow: 0px 7px 8px 0px #666;
       margin-bottom: 40px;
+  }
+  .footer div{
+      padding-right: 10px;
   }
   .contact{
     flex: 1;
