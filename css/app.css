@@ -153,3 +153,23 @@ tr:nth-child(odd) {
       float: left;
   }
   
+  /*footer section*/
+
+  .footer{
+      display: flex;
+      margin-top: 20px;
+      padding: 20px 0px 20px 40px;
+      font-size: medium;
+      font-family: Verdana, sans-serif;
+      box-shadow: 2px 0px 10px 0px #666;
+      margin-bottom: 40px;
+  }
+  .contact{
+    flex: 1;
+  }
+  .follow{
+    flex: 1;
+  }
+  .rss{
+    flex: 2;
+  }
