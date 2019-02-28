@@ -32,6 +32,7 @@
 
 .three-icon{
     flex: 1;
+    padding-right: 5px;
 }
 
 /*navbar styling*/
@@ -50,6 +51,9 @@
 @media(max-width: 500px){
     .navbar{display: none;}
 }
+@media(min-width: 500px){
+    .three-icon{display: none;}
+}
 
 /*jumbotron styling*/
 .jumbotron{
@@ -59,6 +63,7 @@
     flex: 1;
     position: relative;
     display: block;
+    height: 400px;
 }
 .main-image img{
     height: 100%;
