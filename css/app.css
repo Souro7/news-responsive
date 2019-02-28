@@ -93,13 +93,14 @@
     color: white;
     opacity: 0.8;
 }
-@media(min-width: 800px){
-    .headline{
+
+@media(min-width: 800px) {
+    .headline {
         background-color: #fff;
         color: #999;
         opacity: 1;
     }
-    .container{
+    .container {
         padding: 10px 100px 10px 100px;
     }
 }
@@ -146,7 +147,12 @@ tr th {
 tr td {
     padding: 10px;
 }
-
+.left-align{
+    text-align: left;
+}
+.right-align{
+    text-align: right;
+}
 
 @media(max-width: 800px) {
     tr th {
@@ -156,7 +162,6 @@ tr td {
     tr:nth-child(odd) {
         background-color: #e0ebeb;
     }
-    
 }
 
 /*weather widget*/
