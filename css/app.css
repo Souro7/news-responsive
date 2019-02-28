@@ -20,7 +20,7 @@
 }
 
 .page-header {
-    box-shadow: 2px 2px 2px #e6e6e6;
+    box-shadow: 0px 3px 4px 1px #666;
     display: flex;
 }
 
@@ -41,7 +41,7 @@
 
 .navbar {
     display: flex;
-    height: 120;
+    padding: 10px;
 }
 
 .navbar div {
@@ -98,6 +98,9 @@
         background-color: #fff;
         color: #999;
         opacity: 1;
+    }
+    .container{
+        padding: 10px 100px 10px 100px;
     }
 }
 
@@ -245,7 +248,7 @@ tr td {
     display: flex;
     margin-top: 20px;
     padding: 20px 0px 20px 40px;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Verdana, sans-serif;
     box-shadow: 0px 7px 8px 0px #666;
     margin-bottom: 40px;
