@@ -6,7 +6,7 @@
 
 .page-header p {
     font-family: sans-serif;
-    /*font-size: 55px;*/
+    font-size: 1.5rem;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -20,7 +20,7 @@
 }
 
 .page-header {
-    box-shadow: 0px 3px 4px 1px #666;
+    box-shadow: 0px 3px #cccccc;
     display: flex;
 }
 
@@ -62,6 +62,9 @@
     .three-icon {
         display: none;
     }
+    .page-header p {
+        font-size: 2rem;
+    }
 }
 
 /*jumbotron styling*/
@@ -74,7 +77,7 @@
     flex: 1;
     position: relative;
     display: block;
-    height: 400px;
+    height: 25rem;
 }
 
 .main-image img {
@@ -110,7 +113,7 @@
 .top-news>div {
     box-shadow: 0px 2px #e6e6e6;
     padding: 20px 0px 20px 0px;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-family: sans-serif;
     color: #666;
 }
@@ -136,7 +139,7 @@
     text-align: center;
     border-collapse: collapse;
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 tr th {
@@ -147,10 +150,12 @@ tr th {
 tr td {
     padding: 10px;
 }
-.left-align{
+
+.left-align {
     text-align: left;
 }
-.right-align{
+
+.right-align {
     text-align: right;
 }
 
@@ -180,7 +185,7 @@ tr td {
 
 #cur-weather {
     flex: 6;
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 
 .weather-week {
@@ -191,11 +196,11 @@ tr td {
 
 .weather-week div {
     flex: 1;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .location {
-    font-size: xx-large;
+    font-size: 1.5rem;
     margin-bottom: 0%;
 }
 
@@ -221,14 +226,14 @@ tr td {
     box-shadow: 0px 2px #e6e6e6;
 }
 
-.latest div {
+/* .latest div {
     font-size: large;
-}
+} */
 
 .latest-news>div {
     /*box-shadow: 0px 2px #e6e6e6;*/
     padding: 10px;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-family: sans-serif;
     color: #666;
     margin-top: 10px;
@@ -241,7 +246,9 @@ tr td {
 .image img {
     height: 100px;
     float: left;
+    margin-right: 0.5rem;
 }
+
 
 #last-news {
     box-shadow: 0px 2px #e6e6e6;
@@ -251,11 +258,11 @@ tr td {
 
 .footer {
     display: flex;
-    margin-top: 20px;
+    margin-top: 1rem;
     padding: 20px 0px 20px 40px;
-    font-size: 15px;
+    font-size: 0.9rem;
     font-family: Verdana, sans-serif;
-    box-shadow: 0px 7px 8px 0px #666;
+    box-shadow: 0px 3px #cccccc;
     margin-bottom: 40px;
 }
 
@@ -304,8 +311,3 @@ tr td {
     }
 }
 
-@media(min-width: 500px) {
-    .page-header p {
-        font-size: 30px;
-    }
-}
