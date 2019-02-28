@@ -165,7 +165,7 @@ tr td {
 
 #cur-weather {
     flex: 6;
-    font-size: -webkit-xxx-large;
+    font-size: 30px;
 }
 
 .weather-week {
