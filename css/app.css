@@ -93,6 +93,13 @@
     color: white;
     opacity: 0.8;
 }
+@media(min-width: 800px){
+    .headline{
+        background-color: #fff;
+        color: #999;
+        opacity: 1;
+    }
+}
 
 /*top news section styling*/
 
