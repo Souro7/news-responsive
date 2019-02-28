@@ -269,11 +269,12 @@ tr td {
     }
     .jumbotron {
         order: 1;
-        width: 50%;
+        width: 49%;
     }
     .weather {
         order: 2;
-        width: 50%;
+        width: 49%;
+        padding-left: 1px;
     }
     .top-news {
         order: 3;
