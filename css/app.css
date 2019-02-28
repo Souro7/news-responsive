@@ -1,15 +1,17 @@
-.container{
+.container {
     padding: 10px 20px 10px 20px;
 }
 
 /*header styling*/
+
 .page-header p {
     font-family: sans-serif;
     /*font-size: 55px;*/
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.headline p{
+
+.headline p {
     /*font-size: 30px;*/
 }
 
@@ -30,12 +32,13 @@
     flex: 10;
 }
 
-.three-icon{
+.three-icon {
     flex: 1;
     padding-right: 5px;
 }
 
 /*navbar styling*/
+
 .navbar {
     display: flex;
     height: 120;
@@ -43,33 +46,43 @@
 
 .navbar div {
     flex: 1;
-     margin: 0 5% 0 5%; 
+    margin: 0 5% 0 5%;
     font-family: sans-serif;
     color: #666;
     align-items: center;
 }
-@media(max-width: 500px){
-    .navbar{display: none;}
+
+@media(max-width: 500px) {
+    .navbar {
+        display: none;
+    }
 }
-@media(min-width: 500px){
-    .three-icon{display: none;}
+
+@media(min-width: 500px) {
+    .three-icon {
+        display: none;
+    }
 }
 
 /*jumbotron styling*/
-.jumbotron{
+
+.jumbotron {
     display: flex;
 }
-.main-image{
+
+.main-image {
     flex: 1;
     position: relative;
     display: block;
     height: 400px;
 }
-.main-image img{
+
+.main-image img {
     height: 100%;
     width: 100%;
 }
-.headline{
+
+.headline {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -82,27 +95,32 @@
 }
 
 /*top news section styling*/
-.top-news > div{
+
+.top-news>div {
     box-shadow: 0px 2px #e6e6e6;
     padding: 20px 0px 20px 0px;
     font-size: 14px;
     font-family: sans-serif;
     color: #666;
 }
-.top{
+
+.top {
     display: flex;
 }
-.title{
+
+.title {
     flex: 7;
     font-size: large;
 }
-.link{
+
+.link {
     flex: 1;
     font-size: large;
 }
 
 /*scoreboard stylling*/
-.scoreboard table{
+
+.scoreboard table {
     width: 100%;
     text-align: center;
     border-collapse: collapse;
@@ -110,131 +128,168 @@
     font-size: 15px;
 }
 
-tr th{
-    background-color: #669999;
-    color: #fff;
+tr th {
+    padding: 10px;
+    color: #aaa;
+}
+
+tr td {
     padding: 10px;
 }
-tr td{
-    padding: 10px;
+
+
+@media(max-width: 800px) {
+    tr th {
+        background-color: #669999;
+        color: #fff;
+    }
+    tr:nth-child(odd) {
+        background-color: #e0ebeb;
+    }
+    
 }
-tr:nth-child(odd) {
-    background-color: #e0ebeb;
-  }
 
-  /*weather widget*/
- .weather{
-     font-family: Verdana, sans-serif;
- }
-  .current-weather{
-      display: flex;
-  }
-  #cur-img{
-      flex: 1;
-  }
-  #cur-weather{
-      flex: 6;
-      font-size: -webkit-xxx-large;
-  }
+/*weather widget*/
 
-  .weather-week{
-      display: flex;
-      text-align: center;
-      /* flex-wrap: wrap; */
-  }
-  .weather-week div{
-      flex: 1;
-      font-size: 15px;
-  }
-  .location{
+.weather {
+    font-family: Verdana, sans-serif;
+}
+
+.current-weather {
+    display: flex;
+}
+
+#cur-img {
+    flex: 1;
+}
+
+#cur-weather {
+    flex: 6;
+    font-size: -webkit-xxx-large;
+}
+
+.weather-week {
+    display: flex;
+    text-align: center;
+    /* flex-wrap: wrap; */
+}
+
+.weather-week div {
+    flex: 1;
+    font-size: 15px;
+}
+
+.location {
     font-size: xx-large;
     margin-bottom: 0%;
-  }
-  .loc-weather{
-      margin-top: 0%;
-  }
-  .weather-week div img{
-      /* height: 100px;
+}
+
+.loc-weather {
+    margin-top: 0%;
+}
+
+.weather-week div img {
+    /* height: 100px;
       width: 100px; */
-  }
-  .current-weather div img{
+}
+
+.current-weather div img {
     /* height: 200px;
     width: 200px; */
-  }
+}
 
-  /*latest news section*/
-  .latest{
-      display: flex;
-      margin-top: 20px;
-      box-shadow: 0px 2px #e6e6e6;
-  }
-  .latest div{
+/*latest news section*/
+
+.latest {
+    display: flex;
+    margin-top: 20px;
+    box-shadow: 0px 2px #e6e6e6;
+}
+
+.latest div {
     font-size: large;
-  }
-  .latest-news > div{
+}
+
+.latest-news>div {
     /*box-shadow: 0px 2px #e6e6e6;*/
     padding: 10px;
     font-size: 14px;
     font-family: sans-serif;
     color: #666;
     margin-top: 10px;
-  }
-  .image{
+}
+
+.image {
     min-height: 100px;
-  }
-  .image img{
-      height: 100px;
-      float: left;
-  }
-  #last-news{
+}
+
+.image img {
+    height: 100px;
+    float: left;
+}
+
+#last-news {
     box-shadow: 0px 2px #e6e6e6;
-  }
-  
-  /*footer section*/
+}
 
-  .footer{
-      display: flex;
-      margin-top: 20px;
-      padding: 20px 0px 20px 40px;
-      font-size: 20px;
-      font-family: Verdana, sans-serif;
-      box-shadow: 0px 7px 8px 0px #666;
-      margin-bottom: 40px;
-  }
-  .footer div{
-      padding-right: 10px;
-  }
-  .contact{
+/*footer section*/
+
+.footer {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px 0px 20px 40px;
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+    box-shadow: 0px 7px 8px 0px #666;
+    margin-bottom: 40px;
+}
+
+.footer div {
+    padding-right: 10px;
+}
+
+.contact {
     flex: 1;
-  }
-  .follow{
+}
+
+.follow {
     flex: 1;
-  }
-  .rss{
+}
+
+.rss {
     flex: 2;
-  }
+}
 
-  /*for switching in case of tablet view*/
-  
- 
-  @media (min-width: 500px) and (max-width: 800px){
-    .switch-container{
+/*for switching in case of tablet view*/
+
+@media (min-width: 500px) and (max-width: 800px) {
+    .switch-container {
         display: flex;
         flex-wrap: wrap;
-        }
-    .jumbotron{
+    }
+    .jumbotron {
         order: 1;
         width: 50%;
     }
-    .weather{order: 2; width: 50%;}
-    .top-news{order: 3; width: 100%;}
-    .scoreboard{order: 4; width: 100%;}
-    .weather-week{
+    .weather {
+        order: 2;
+        width: 50%;
+    }
+    .top-news {
+        order: 3;
+        width: 100%;
+    }
+    .scoreboard {
+        order: 4;
+        width: 100%;
+    }
+    .weather-week {
         flex-wrap: wrap;
     }
-  }
-  @media(min-width: 500px){
-      .page-header p{
-          font-size: 30px;
-      }
-  }
+}
+
+@media(min-width: 500px) {
+    .page-header p {
+        font-size: 30px;
+    }
+}
