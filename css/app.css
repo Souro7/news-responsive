@@ -5,7 +5,7 @@
 /*header styling*/
 
 .page-header p {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -37,6 +37,10 @@
     padding-right: 5px;
 }
 
+.page-header div img {
+    height: 3rem;
+}
+
 /*navbar styling*/
 
 .navbar {
@@ -53,12 +57,12 @@
 }
 
 @media(max-width: 900px) {
-    
-    .container{
+    .container {
         padding: 0px;
     }
 }
-@media(max-width: 500px){
+
+@media(max-width: 500px) {
     .navbar {
         display: none;
     }
@@ -71,7 +75,6 @@
     .page-header p {
         font-size: 2rem;
     }
-    
 }
 
 /*jumbotron styling*/
@@ -84,18 +87,20 @@
     flex: 1;
     position: relative;
     display: block;
-    height: 35rem;
+    height: 25rem;
 }
-@media(max-width: 500px){
-    .main-image{
+
+@media(max-width: 500px) {
+    .main-image {
         height: 20rem;
     }
 }
-@media(min-width: 500px) and (max-width: 900px){
+
+/* @media(min-width: 500px) and (max-width: 800px){
     .main-image{
         height: 25rem;
     }
-}
+} */
 
 .main-image .img-holder {
     background-image: url("../images/dog.jpg");
@@ -130,7 +135,7 @@
 
 /*top news section styling*/
 
-.top-news>div {
+.top-news>div>div {
     box-shadow: 0px 2px #e6e6e6;
     padding: 20px 0px 20px 0px;
     font-size: 0.9rem;
@@ -138,7 +143,7 @@
     color: #666;
 }
 
-.top {
+.top-news-header {
     display: flex;
 }
 
@@ -244,7 +249,7 @@ tr td {
 
 /*latest news section*/
 
-.latest {
+.latest-news-header {
     display: flex;
     margin-top: 20px;
     box-shadow: 0px 2px #e6e6e6;
@@ -254,7 +259,7 @@ tr td {
     font-size: large;
 } */
 
-.latest-news>div {
+.latest-news>div>div {
     /*box-shadow: 0px 2px #e6e6e6;*/
     padding: 10px;
     font-size: 0.9rem;
@@ -308,17 +313,25 @@ tr td {
 /*for switching in case of tablet view*/
 
 @media (min-width: 500px) and (max-width: 800px) {
-    .switch-container {
+    .container {
         display: flex;
         flex-wrap: wrap;
     }
+    .page-header {
+        order: -1;
+        width: 100%;
+    }
+    .navbar {
+        order: 0;
+        width: 100%;
+    }
     .jumbotron {
         order: 1;
-        width: 60%;
+        width: 55%;
     }
     .weather {
         order: 2;
-        width: 38%;
+        width: 43%;
         padding-left: 1px;
     }
     .top-news {
@@ -331,5 +344,13 @@ tr td {
     }
     .weather-week {
         flex-wrap: wrap;
+    }
+    .latest-news {
+        order: 5;
+        width: 100%;
+    }
+    .footer {
+        order: 6;
+        width: 100%;
     }
 }
